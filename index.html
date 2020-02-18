@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing game</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/fb6ef03ea0.js" crossorigin="anonymous" defer></script>
+  <script src="./script.js" defer></script>
+</head>
+
+<body>
+  <!-- setting btn  -->
+  <button id="setting-btn" class="setting-btn">
+    <i class="fas fa-cog"></i>
+  </button>
+
+  <!-- setting form -->
+  <div id="setting" class="setting">
+    <form id="setting-form">
+      <div class="">
+        <label for="difficulty">Difficulty</label>
+        <select id="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+    </form>
+  </div>
+
+  <!-- game container -->
+  <div class="container">
+    <h2>🐱‍🚀 Typing Game 🐱‍🚀</h2>
+    <small>Try to type the following</small>
+    <h2 id="word"></h2>
+    <input type="text" autocomplete="off" id="text" placeholder="Type the word in here">
+
+    <!-- show time left -->
+    <p class="time-container">
+      Time left <span id="time">10s</span>
+    </p>
+
+    <!-- show score -->
+    <p class="score-container">
+      Score <span id="score">0</span>
+    </p>
+
+    <!-- end game container -->
+    <div class="end-game-container" id="end-game-container"></div>
+  </div>
+</body>
+
+</html>
