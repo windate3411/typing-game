@@ -47,7 +47,7 @@ select {
   justify-content: center;
   height: 70px;
   transform: translateY(0);
-  transition: transform 0.3 ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .setting.hide {
